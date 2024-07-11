@@ -1,3 +1,6 @@
+
+import Link from 'next/link'
+
 export default function Training({training}) {
 
     const startDate = new Date(training.elements.startDate.value).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"})
@@ -6,7 +9,7 @@ export default function Training({training}) {
 
     return (
         <div className="py-2 text-white">
-          <a href="/">
+          <Link href="/">
         <div className="max-w-9xl mx-auto flex flex-col items-center bg-emerald-700 px-5 py-8 lg:flex-row hover:bg-gray-700">
           <div className="flex flex-col items-center pb-16 pl-0 text-left lg:mb-0 lg:w-1/2 lg:flex-grow lg:items-start lg:pl-12 lg:pr-24 lg:text-left">
           <div className="text-lg font-bold sm:text-lg py-2 w-full text-gray-300">
@@ -26,7 +29,7 @@ export default function Training({training}) {
           </div>
           </div>
         </div>
-        </a>
+        </Link>
       </div>
     )
 }
