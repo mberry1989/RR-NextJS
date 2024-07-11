@@ -7,6 +7,8 @@ export default function Training({training}) {
     const start = startDate + ' ' + new Date(training.elements.startDate.value).toLocaleTimeString()
     const endTime = new Date(training.elements.endDate.value).toLocaleTimeString()
 
+    const location = training.elements.location.linkedItems[0]
+
     return (
         <div className="py-2 text-white">
           <Link href="/">
@@ -14,7 +16,9 @@ export default function Training({training}) {
           <div className="flex flex-col items-center pb-16 pl-0 text-left lg:mb-0 lg:w-1/2 lg:flex-grow lg:items-start lg:pl-12 lg:pr-24 lg:text-left">
           <div className="text-lg font-bold sm:text-lg py-2 w-full text-gray-300">
            {start}
-          </div>
+           <br />
+              {location && location.elements.name.value}
+            </div>
             <h2 className="pb-4 text-2xl font-bold leading-tight lg:text-4xl w-full">
               {training.elements.title.value}
             </h2>
