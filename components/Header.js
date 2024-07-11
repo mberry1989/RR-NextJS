@@ -3,29 +3,11 @@
 export default function Header() {
   return (
     <>
-      <div
-        className="
-        bg-blue
-        grotesk
-        absolute
-        top-0
-        h-7
-        w-full 
-        text-center
-        text-sm
-        leading-6
-        text-white
-      "
-      >
-        Scelerisque egestas et euismod.
-        <a href="/" className="pl-3 underline">
-          Take me there
-        </a>
-      </div>
-      <div className="grotesk mt-6 mb-16 flex items-center justify-between py-4 px-4 sm:mx-0 sm:mb-20 sm:px-0 md:px-6">
-        <div className="mt-4 inline-block pb-4 pl-8">
+      <div className="grotesk mt-6 mb-2 flex items-center justify-between py-4 px-4 sm:mx-0 sm:mb-20 sm:px-0 md:px-6">
+        <div className=" inline-block pb-4 pl-8">
           <a href="/" className="align-middle text-3xl font-bold text-black">
-            NINE4
+            <img src="https://assets-us-01.kc-usercontent.com/0556adc4-3835-004e-57f9-6c9bfaa316d6/aeba8970-91f2-4bf9-b93f-d255ba7f969b/evergreen-logo.jpg%20%283829%C3%97833%29.png" 
+            alt="evergreen logo" className="w-10 float-left"/><span className="text-emerald-700">EVERGREEN</span>
           </a>
           <div className="hidden pl-14 align-middle xl:inline-block">
             <a href="/" className="pr-12 text-xl text-black">
